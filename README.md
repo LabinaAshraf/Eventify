@@ -6,7 +6,7 @@ A modern and responsive event discovery website built with HTML, CSS, and JavaSc
 
 Visit the live website:
 
-https://LabinaAshraf.github.io/eventify/
+https://labinaashraf.github.io/eventify/
 
 ## ✨ Features
 
