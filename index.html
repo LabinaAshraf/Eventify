@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventify | Discover Amazing Events</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Event<span>ify</span>
+        </div>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#events">Events</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="themeBtn" aria-label="Toggle dark mode">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="tag">
+                    DISCOVER • CONNECT • EXPERIENCE
+                </p>
+
+                <h1>
+                    Discover Events
+                    <span>You'll Love.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Find exciting events, connect with amazing people,
+                    and create unforgettable experiences.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#events" class="primary-btn">
+                        Explore Events →
+                    </a>
+
+                    <a href="#categories" class="secondary-btn">
+                        Browse Categories
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SEARCH
+        ========================== -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔍 Search events..."
+                    aria-label="Search events">
+
+                <select
+                    id="categoryFilter"
+                    aria-label="Filter events">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="Music">
+                        Music
+                    </option>
+
+                    <option value="Technology">
+                        Technology
+                    </option>
+
+                    <option value="Business">
+                        Business
+                    </option>
+
+                    <option value="Sports">
+                        Sports
+                    </option>
+
+                    <option value="Arts">
+                        Arts
+                    </option>
+
+                </select>
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EVENTS
+        ========================== -->
+
+        <section
+            class="events-section"
+            id="events">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-tag">
+                        WHAT'S HAPPENING
+                    </p>
+
+                    <h2>
+                        Upcoming Events
+                    </h2>
+
+                </div>
+
+                <p>
+                    Discover experiences happening near you.
+                </p>
+
+            </div>
+
+
+            <div
+                class="events-grid"
+                id="eventsGrid">
+
+
+                <!-- EVENT 1 -->
+
+                <article
+                    class="event-card"
+                    data-category="Technology">
+
+                    <div class="event-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+                            alt="Technology conference">
+
+                    </div>
+
+                    <div class="event-info">
+
+                        <span class="category technology">
+                            Technology
+                        </span>
+
+                        <h3>
+                            Future Tech Summit
+                        </h3>
+
+                        <p class="event-date">
+                            📅 August 30, 2026
+                        </p>
+
+                        <p class="event-location">
+                            📍 Faisalabad, Pakistan
+                        </p>
+
+                        <button class="register-btn">
+                            Register Now
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 2 -->
+
+                <article
+                    class="event-card"
+                    data-category="Music">
+
+                    <div class="event-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80"
+                            alt="Live music event">
+
+                    </div>
+
+                    <div class="event-info">
+
+                        <span class="category music">
+                            Music
+                        </span>
+
+                        <h3>
+                            Live Music Night
+                        </h3>
+
+                        <p class="event-date">
+                            📅 September 5, 2026
+                        </p>
+
+                        <p class="event-location">
+                            📍 Lahore, Pakistan
+                        </p>
+
+                        <button class="register-btn">
+                            Register Now
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 3 -->
+
+                <article
+                    class="event-card"
+                    data-category="Business">
+
+                    <div class="event-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+                            alt="Business networking event">
+
+                    </div>
+
+                    <div class="event-info">
+
+                        <span class="category business">
+                            Business
+                        </span>
+
+                        <h3>
+                            Startup Networking Meetup
+                        </h3>
+
+                        <p class="event-date">
+                            📅 September 12, 2026
+                        </p>
+
+                        <p class="event-location">
+                            📍 Islamabad, Pakistan
+                        </p>
+
+                        <button class="register-btn">
+                            Register Now
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 4 -->
+
+                <article
+                    class="event-card"
+                    data-category="Sports">
+
+                    <div class="event-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
+                            alt="Sports event">
+
+                    </div>
+
+                    <div class="event-info">
+
+                        <span class="category sports">
+                            Sports
+                        </span>
+
+                        <h3>
+                            Community Sports Festival
+                        </h3>
+
+                        <p class="event-date">
+                            📅 September 20, 2026
+                        </p>
+
+                        <p class="event-location">
+                            📍 Karachi, Pakistan
+                        </p>
+
+                        <button class="register-btn">
+                            Register Now
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 5 -->
+
+                <article
+                    class="event-card"
+                    data-category="Arts">
+
+                    <div class="event-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=800&q=80"
+                            alt="Art exhibition">
+
+                    </div>
+
+                    <div class="event-info">
+
+                        <span class="category arts">
+                            Arts
+                        </span>
+
+                        <h3>
+                            Creative Arts Exhibition
+                        </h3>
+
+                        <p class="event-date">
+                            📅 October 3, 2026
+                        </p>
+
+                        <p class="event-location">
+                            📍 Faisalabad, Pakistan
+                        </p>
+
+                        <button class="register-btn">
+                            Register Now
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 6 -->
+
+                <article
+                    class="event-card"
+                    data-category="Technology">
+
+                    <div class="event-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                            alt="AI technology event">
+
+                    </div>
+
+                    <div class="event-info">
+
+                        <span class="category technology">
+                            Technology
+                        </span>
+
+                        <h3>
+                            AI & Innovation Workshop
+                        </h3>
+
+                        <p class="event-date">
+                            📅 October 10, 2026
+                        </p>
+
+                        <p class="event-location">
+                            📍 Online Event
+                        </p>
+
+                        <button class="register-btn">
+                            Register Now
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- NO EVENTS -->
+
+            <p
+                id="noEvents"
+                class="no-events">
+
+                No events found. Try another search.
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+        <section
+            class="categories-section"
+            id="categories">
+
+            <p class="section-tag">
+                EXPLORE
+            </p>
+
+            <h2>
+                Find Your Interests
+            </h2>
+
+
+            <div class="categories-grid">
+
+
+                <div class="category-card">
+
+                    🎵
+
+                    <h3>
+                        Music
+                    </h3>
+
+                    <p>
+                        Concerts & live shows
+                    </p>
+
+                </div>
+
+
+                <div class="category-card">
+
+                    💻
+
+                    <h3>
+                        Technology
+                    </h3>
+
+                    <p>
+                        Tech talks & workshops
+                    </p>
+
+                </div>
+
+
+                <div class="category-card">
+
+                    💼
+
+                    <h3>
+                        Business
+                    </h3>
+
+                    <p>
+                        Networking & startups
+                    </p>
+
+                </div>
+
+
+                <div class="category-card">
+
+                    ⚽
+
+                    <h3>
+                        Sports
+                    </h3>
+
+                    <p>
+                        Games & tournaments
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT / PROFILE
+        ========================== -->
+
+        <section
+            class="profile-section"
+            id="about">
+
+            <div class="profile-card">
+
+
+                <div class="profile-avatar">
+                    LA
+                </div>
+
+
+                <div class="profile-info">
+
+                    <p class="section-tag">
+                        ABOUT THE DEVELOPER
+                    </p>
+
+                    <h2>
+                        Hi, I'm Labina Ashraf 👋
+                    </h2>
+
+                    <h3>
+                        Aspiring Front-End Developer
+                    </h3>
+
+                    <p>
+                        I'm learning front-end web development
+                        and enjoy creating clean, modern and
+                        user-friendly websites.
+                    </p>
+
+                    <p>
+                        Eventify is one of my projects where I
+                        practiced HTML, CSS and JavaScript by
+                        building an interactive event discovery
+                        platform.
+                    </p>
+
+
+                    <div class="skills">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            Responsive Design
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-buttons">
+
+                        <a
+                            href="https://www.linkedin.com/in/labina-ashraf-bb33243b5"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="primary-btn">
+
+                            LinkedIn ↗
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/LabinaAshraf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="secondary-btn">
+
+                            GitHub ↗
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section
+            class="contact-section"
+            id="contact">
+
+            <div class="contact-container">
+
+                <p class="section-tag">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+                <p class="contact-text">
+                    Have a question, suggestion, or just want
+                    to say hello? Send me a message.
+                </p>
+
+
+                <form
+                    class="contact-form"
+                    id="contactForm">
+
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Your Name"
+                        required>
+
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Your Email"
+                        required>
+
+
+                    <textarea
+                        id="contactMessage"
+                        placeholder="Your Message"
+                        required></textarea>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        Send Message →
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <h2>
+                Event<span>ify</span>
+            </h2>
+
+            <p>
+                Discover. Connect. Experience.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Eventify. Built with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         REGISTRATION MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                id="closeBtn"
+                aria-label="Close">
+
+                ×
+
+            </button>
+
+
+            <h2>
+                Register for Event
+            </h2>
+
+
+            <p id="selectedEvent">
+                Event Name
+            </p>
+
+
+            <form id="registrationForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required>
+
+
+                <button type="submit">
+                    Complete Registration
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
